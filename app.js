@@ -5,6 +5,16 @@ const mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost/knowledgebase');
 let db = mongoose.connection;
 
+// check connection
+db.once('open', function () {
+   console.log("connected to mongodb")
+});
+
+//check for db errors
+db.on('error', function (err) {
+   console.log(err);
+});
+
 // Init app
 const app = express();
 
