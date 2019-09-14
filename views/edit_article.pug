@@ -1,9 +1,9 @@
 extends layout
 
 block content
-    a(href="/article/" + article._id) back
+    a(href="/articles/" + article._id) back
     h1 #{title}
-    form(method='POST', action='/article/edit/' + article._id)
+    form(method='POST', action='/articles/edit/' + article._id)
         .form-group
             label Title
             input.form-control(name="title", type="text", value=article.title)

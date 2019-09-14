@@ -7,5 +7,5 @@ block content
         i Written by #{article.author}
     p= article.body
     hr
-    a.btn.btn-outline-dark.mr-2(href="/article/edit/"+article._id) Edit
+    a.btn.btn-outline-dark.mr-2(href="/articles/edit/"+article._id) Edit
     a.btn.btn-danger#deleteArticle(href="#", data-id= article._id) Delete

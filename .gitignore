@@ -1,4 +1,6 @@
 /package-lock.json
 node_modules
 public/bower_components
+public/css/**.map
+public/js/**.map
 tsconfig.json
