@@ -4,9 +4,24 @@ html
         title knowledge_base
         link(rel="stylesheet" href="/bower_components/boostrap/dist/css/bootstrap.css")
     body
-        .container
+        nav.navbar.navbar-expand-md.bg-dark.navbar-dark
+            a.navbar-brand(href="/") Knowledge base
+            button.navbar-toggler(type="button" data-toggle="collapse" data-target="#collapsibleNavbar")
+            span.navbar-toggler-icon
+            .collapse.navbar-collapse#collapsibleNavbar
+                ul.navbar-nav
+                    li.nav-item
+                        a.nav-link(href="/") Home
+                    li.nav-item
+                        a.nav-link(href="/articles/add") Add article
+
+        .container.mt-4
             block content
             br
             hr
             footer
                 p copyright &copy; 2019
+
+        //TODO import popper js via bower
+        script(src="/bower_components/jquery/dist/jquery.min.js")
+        script(src="/bower_components/boostrap/dist/js/bootstrap.js")
