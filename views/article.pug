@@ -1,7 +1,10 @@
 extends layout
 
 block content
+    a(href="/") back
     h1= article.title
     h6
         i Written by #{article.author}
     p= article.body
+    br
+    a.btn.btn-outline-dark(href="/article/edit/"+article._id) Edit
