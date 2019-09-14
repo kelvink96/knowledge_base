@@ -17,6 +17,7 @@
     "pug": "^2.0.4"
   },
   "devDependencies": {
+    "@types/jquery": "^3.3.31",
     "nodemon": "^1.19.1"
   }
 }
